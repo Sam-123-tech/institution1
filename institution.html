@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institution</title>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --navbar-height: 59px;
+}
+#navbar{
+    display: flex; 
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#logo{
+    margin: 10px 34px;
+}
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{ 
+    content: "";
+    position: absolute;
+    background: url('Images/bg5.jpg') no-repeat center center/cover;
+    height: 642px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+#home h1{
+    color: black;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+#home p{
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{ 
+    border: 5px solid red;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: white;
+    margin-bottom: 20px;
+}
+#services .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+}
+#services .box p{
+    font-family: 'Bree Serif', serif;
+} 
+#client-section{ 
+    position: relative;
+}
+#client-section::before{
+ content: "";
+ position: absolute;
+ background: url('Images/bg6.jpg');
+ width: 100%;
+ height: 100%;
+ z-index: -1;
+ opacity: 0.4;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 34px;
+}
+#clients img{
+    height: 124px;
+}
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background: url('Images/contact1.jpg') no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+.btn1{
+    padding: 6px 20px;
+    border: 5px solid gold;
+    background-color: deepskyblue;
+    color: fuchsia;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+}
+.center{
+    text-align: center;
+}
+</style>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="Images/logo2.jpg" alt="Texas.com">
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services-container">Services</a></li>
+            <li class="item"><a href="#client-section">Our Clients</a></li>
+            <li class="item"><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary">Welcome to Texas</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis dolorum numquam minus. </p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+        <button class="btn1">Study Now</button>
+    </section>
+    <section id="services-container">
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="Images/book1.png" alt="">
+                <h2 class="h-secondary center">BOOKS</h2>
+                <p class="center">Books are our best friend. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et qui, repudiandae similique nam, recusandae quidem ab asperiores ex, aut fugit labore veritatis facere?
+                    sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem iste sunt
+                    voluptas beatae facilis labore, omnis sint quae eum.</p>
+            </div>
+            <div class="box">
+                <img src="Images/book2.jpg" alt="">
+                <h2 class="h-secondary center">Our Academy</h2>
+                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laudantium a incidunt animi ad, ab dignissimos vero? Unde numquam odit repudiandae perferendis nisi. 
+                    sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem iste sunt
+                    voluptas beatae facilis labore, omnis sint quae eum.</p>
+            </div>
+            <div class="box">
+                <img src="Images/book3.jpg" alt="">
+                <h2 class="h-secondary center">Study order</h2>
+                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus provident fugiat aliquam minima at explicabo. Earum eveniet quaerat, sunt molestias nesciunt quas! Quis.
+                    sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem iste sunt
+                    voluptas beatae facilis labore, omnis sint quae eum.</p>
+            </div>
+        </div>
+    </section>
+    <section id="client-section">
+        <h1 class="h-primary center">Our Clients</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="Images/Skype-Logo.png" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="Images/hp.jpg" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="Images/apple.png" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="Images/Microsoft.jpg" alt="Our Client">
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="name" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number: </label>
+                    <input type="phone" name="name" id="phone" placeholder="Enter your phone">
+                </div>
+                <div class="form-group">
+                    <label for="age">Age: </label>
+                    <input type="age" name="name" id="age" placeholder="Enter your age">
+                </div>
+                <div class="form-group">
+                    <label for="locality">Locality </label>
+                    <input type="locality" name="name" id="locality" placeholder="Enter your locality">
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender: </label>
+                    <input type="gender" name="name" id="gender" placeholder="Enter your gender">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+        </form>
+    </div>
+    <footer>
+        <div class="center">
+            Copyright &copy; www.Texas.com. All rights reserved!
+        </div> 
+    </footer>
+    <script>
+var a=53;
+        var b="Samridhi";
+        var num1=11;
+        var num2=9693865983;
+        console.log("The sum of num1 and num2="+ (num1+num2));
+        console.log("The subtraction of num1 and num2="+ (num1-num2));
+        console.log("The multiplication of num1 and num2="+ (num1*num2));
+        console.log("The division of num1 and num2="+ (num1/num2));
+        var string='A lot of students are studying in Texas academy to be the best in their field of subject"';
+        var name='Gulu';
+        var academy='Texas Academy';
+        var message='To be a champion in your subject join the Texas academy soon!!';
+        console.log(name+academy+message+string);
+        console.log(string);
+        var str = "Texas academy has the best teachers of India and some of the best teachers of the world";
+    console.log(str);
+    var position = str.indexOf('best');
+    console.log(position);
+    position = str.lastIndexOf('teachers');
+    console.log(position)
+    var substr = str.slice(1,15);
+    console.log(substr);
+    var substr = str.substring(1,20);
+    console.log(substr);
+    var replaced = str.replace('world', 'USA');
+    console.log(str);
+    console.log(replaced);
+    console.log(str.toUpperCase()); 
+    console.log(str.toLowerCase());
+    var strWithWhitespaces = "   Texas                       is              a         good                 academy             ";
+    console.log(strWithWhitespaces);
+    console.log(strWithWhitespaces.trim());
+    var char2 = str.charAt(8);
+    console.log(char2)
+    console.log(str[3])
+    var newString = str.concat('New String');
+    console.log(newString);
+    var string1 = "Be a champion in your field of subject";
+    console.log(string1);
+    string1="Do your best in your studies";
+    console.log(string1);
+    let age = 18;
+    if(age<2){
+         console.log("You can drink some  water");
+     }
+    else if(age==18){
+        console.log("You can read your favourite story book")
+    }
+    else if(age==20){
+         console.log("Your age is 20 and you have been excuted")
+     }
+    else{
+    console.log("You can have your favourite food");
+    }
+    const cups = 26; 
+    switch (cups) {
+        case 2:
+            console.log("The value of cups are 24")
+            break;
+
+        case 24:
+            console.log("The value of cups are 24")
+            break;
+
+        case 25:
+            console.log("The value of cups are 25")
+            break;
+
+        case 26:
+            console.log("The value of cups are 26")
+            break;
+    
+        default:
+            console.log("The value of cups is none of 2, 24, 25, 26")
+            break;
+    }
+    </script>
+</body>
+</html>
